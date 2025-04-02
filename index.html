@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCell - Loja de Celulares</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://i.imgur.com/oYsd061.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.imgur.com/oYsd061.png" alt="Logo MyCell">
+            </div>
+            <ul>
+                <li style="transform: translateX(-2vh);"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li style="transform: translateX(25vh);"><a href="#produtos">Produtos</a></li>
+                <li style="transform: translateX(25vh);"><a href="#equipe">Equipe</a></li>
+                <li style="transform: translateX(75vh);"><a href="#localizacao">Localização</a></li>
+                <li style="transform: translateX(75vh);"><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.instagram.com/my_cell_acessorios/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/5517992638530" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <!-- Substitua o número pelo seu número do WhatsApp -->
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Bem-vindo à MyCell</h1>
+            <p>Descubra os melhores celulares e acessórios para você!</p>
+            <a href="#todos-produtos" class="btn">Confira todos nossos produtos!</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Produtos em Destaque</h2>
+        <div class="produto-card">
+            <img src="https://ik.imagekit.io/gocase/govinci/planetinhas/caseimpactslimstandard-iphone12promax/mockup?"
+                alt="Capas para Celular">
+            <h3>Capas para Celular</h3>
+            <p>Proteja seu celular com estilo. Diversas opções de capas!</p>
+            <p class="estoque">Em estoque: 20 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/xbjbxtnx/file.png"
+                alt="Fones de Ouvido">
+            <h3>Fones de Ouvido</h3>
+            <p>Ouça suas músicas com qualidade e conforto!</p>
+            <p class="estoque">Em estoque: 10 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://m.media-amazon.com/images/I/61E175zau1L._AC_UF1000,1000_QL80_.jpg" alt="Carregador">
+            <h3>Carregadores</h3>
+            <p>Carregue seu celular rapidamente!</p>
+            <p class="estoque">Em estoque: 30 unidades</p>
+        </div>
+    </section>
+
+    <!-- Todos os Produtos -->
+
+    <section id="equipe" class="equipe">
+        <h2>Conheça nossa Equipe</h2>
+        <div class="membro-equipe">
+            <img src="https://i.imgur.com/Bla6Oqy.jpeg" alt="Membro da Equipe">
+            <h3>João Silva</h3>
+            <p>Gerente de vendas</p>
+        </div>
+        <div class="membro-equipe">
+            <img src="https://jornaltribuna.com.br/wp-content/uploads/2021/01/IMG_20201226_100528-e1609610188235-1024x1024.jpg"
+                alt="Membro da Equipe">
+            <h3>Maria</h3>
+            <p>Atendente de loja</p>
+        </div>
+        <div class="membro-equipe">
+            <img src="https://jornaltribuna.com.br/wp-content/uploads/2021/01/IMG_20201226_100528-e1609610188235-1024x1024.jpg"
+                alt="Membro da Equipe">
+            <h3>Maria</h3>
+            <p>Atendente de loja</p>
+        </div>
+        <div class="membro-equipe">
+            <img src="https://jornaltribuna.com.br/wp-content/uploads/2021/01/IMG_20201226_100528-e1609610188235-1024x1024.jpg"
+                alt="Membro da Equipe">
+            <h3>Maria</h3>
+            <p>Atendente de loja</p>
+        </div>
+    </section>
+
+    <section id="localizacao" class="localizacao">
+        <h2>Visite-nos</h2>
+        <div id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d226.48886299548704!2d-48.56790926107764!3d-20.55953888537164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1743218513162!5m2!1spt-BR!2sbr"
+                width="90%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="todos-produtos" class="todos-produtos">
+        <h2>Todos os produtos de nossa loja!</h2>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar produtos..." onkeyup="filterProducts()">
+        </div>
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/0000FF/808080?Text=Produto+1" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>Descrição do produto 1.</p>
+            <p class="estoque">Em estoque: 15 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/FF0000/808080?Text=Produto+2" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>Descrição do produto 2.</p>
+            <p class="estoque">Em estoque: 25 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/00FF00/808080?Text=Produto+3" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>Descrição do produto 3.</p>
+            <p class="estoque">Em estoque: 5 unidades</p>
+        </div>
+        <!-- Adicione quantos produtos quiser -->
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/FFFF00/808080?Text=Produto+4" alt="Produto 4">
+            <h3>Produto 4</h3>
+            <p>Descrição do produto 4.</p>
+            <p class="estoque">Em estoque: 12 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/FF00FF/808080?Text=Produto+5" alt="Produto 5">
+            <h3>Produto 5</h3>
+            <p>Descrição do produto 5.</p>
+            <p class="estoque">Em estoque: 30 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/0000FF/808080?Text=Produto+1" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>Descrição do produto 1.</p>
+            <p class="estoque">Em estoque: 15 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/FF0000/808080?Text=Produto+2" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>Descrição do produto 2.</p>
+            <p class="estoque">Em estoque: 25 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/00FF00/808080?Text=Produto+3" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>Descrição do produto 3.</p>
+            <p class="estoque">Em estoque: 5 unidades</p>
+        </div>
+        <!-- Adicione quantos produtos quiser -->
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/FFFF00/808080?Text=Produto+4" alt="Produto 4">
+            <h3>Produto 4</h3>
+            <p>Descrição do produto 4.</p>
+            <p class="estoque">Em estoque: 12 unidades</p>
+        </div>
+        <div class="produto-card">
+            <img src="https://via.placeholder.com/250x250/FF00FF/808080?Text=Produto+5" alt="Produto 5">
+            <h3>Produto 5</h3>
+            <p>Descrição do produto 5.</p>
+            <p class="estoque">Em estoque: 30 unidades</p>
+        </div>
+        <!-- Continue a adicionar mais produtos -->
+    </section>
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco:</p>
+        <div class="contato-info">
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>Telefone: <a href="tel:+5517992638530">+55 17 99263-8530</a></p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>Email: <a href="mailto:exemplo@email.com">exemplo@email.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links-footer">
+            <a href="https://www.instagram.com/my_cell_acessorios/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <!-- Ícone do WhatsApp -->
+            <a href="https://wa.me/5517992638530" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <!-- Substitua pelo seu número -->
+        </div>
+        <p>&copy; 2025 MyCell | Todos os direitos reservados</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
