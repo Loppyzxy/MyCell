@@ -170,7 +170,7 @@ nav ul li a:hover {
 
 .estoque {
     color: green;
-    font-weight:  bold;
+    font-weight: bold;
 }
 
 .btn {
@@ -375,14 +375,24 @@ li {
     margin-bottom: 20px;
 }
 
+/* Responsivo para telas pequenas (celulares) */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
         gap: 15px;
+        text-align: center;
+    }
+
+    nav ul li {
+        font-size: 5vh; /* Ajuste de tamanho de fonte */
     }
 
     .home h1 {
-        font-size: 3rem;
+        font-size: 8vw; /* Tamanho da fonte ajustado para celulares */
+    }
+
+    .home p {
+        font-size: 1.5rem; /* Tamanho da fonte reduzido */
     }
 
     .produto-card {
@@ -411,44 +421,21 @@ li {
     }
 
     .info-item {
-        width: 100%;
+        width: 100%; /* Ajuste para largura em dispositivos móveis */
     }
 
     #search-input {
-        width: 90%;
+        width: 80%; /* Maior largura para input de busca */
+        font-size: 1.4rem; /* Ajuste na fonte */
     }
-}
 
-.search-container {
-    text-align: center;
-    margin-bottom: 8vh;
-}
+    .equipe .membro-equipe {
+        width: 100%;
+        margin: 10px 0;
+    }
 
-#search-input {
-    width: 50%;
-    padding: 10px;
-    font-size: 1.5rem;
-    border-radius: 2vh;
-    border: 1px solid #007bb5;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#search-input:focus {
-    outline: none;
-    border-color: #005f7f;
-}
-
-.reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.btn, .produto-card {
-    will-change: transform, opacity;
+    .home .btn {
+        padding: 12px 30px;
+        font-size: 1.4rem;
+    }
 }
